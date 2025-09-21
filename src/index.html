@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="output.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="imgs/jk-logo-black.png" />
+
+    <!-- Primary Meta Tags -->
+    <title>
+      JK House and Suppliers | Quality Hardware & Building Solutions
+    </title>
+    <meta
+      name="title"
+      content="JK House and Suppliers | Quality Hardware & Building Solutions"
+    />
+    <meta
+      name="description"
+      content="Durable pipes, fittings, and hardware solutions. Wholesale and retail availability with trusted quality and customer satisfaction."
+    />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta
+      property="og:title"
+      content="JK House and Suppliers | Quality Hardware & Building Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Durable pipes, fittings, and hardware solutions. Wholesale and retail availability with trusted quality and customer satisfaction."
+    />
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/path-to-preview-image.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="JK House and Suppliers - Hardware and Building Solutions"
+    />
+    <meta property="og:site_name" content="JK House and Suppliers" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://yourwebsite.com/" />
+    <meta
+      name="twitter:title"
+      content="JK House and Suppliers | Quality Hardware & Building Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="Durable pipes, fittings, and hardware solutions. Wholesale and retail availability with trusted quality and customer satisfaction."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourwebsite.com/path-to-preview-image.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="JK House and Suppliers - Hardware and Building Solutions"
+    />
+
+    <!-- Pinterest -->
+    <meta name="pinterest-rich-pin" content="true" />
+
+    <!-- Optional: Instagram (web preview via OG) -->
+    <meta
+      property="og:description"
+      content="Durable pipes, fittings, and hardware solutions. Wholesale and retail availability with trusted quality and customer satisfaction."
+    />
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/path-to-preview-image.jpg"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 z-50 w-full" role="banner">
+      <nav
+        id="navbar"
+        class="fixed w-full top-0 left-0 bg-white/20 backdrop-blur-md px-6 py-4 flex items-center justify-between shadow-none transition-all duration-300 z-50"
+        role="navigation"
+        aria-label="Main Navigation"
+      >
+        <!-- Logo + Brand Name as H1 for Homepage SEO -->
+        <div class="flex items-center space-x-3">
+          <a
+            href="#home"
+            class="flex items-center"
+            aria-label="JK House and Suppliers Homepage"
+          >
+            <img
+              id="logo"
+              src="imgs/jk-logo-black.png"
+              alt="JK House Logo"
+              class="h-12 w-12 rounded-full object-cover"
+            />
+            <h1
+              id="jkhouse"
+              class="ml-3 text-lg sm:text-xl md:text-2xl font-bold text-white transition-colors duration-300"
+            >
+              JK House and Suppliers
+            </h1>
+          </a>
+        </div>
+
+        <!-- Desktop Links -->
+        <ul id="links" class="hidden space-x-6 font-medium md:flex">
+          <li>
+            <a
+              href="#home"
+              class="text-white hover:text-gray-500 transition-colors duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#aboutus"
+              class="text-white hover:text-gray-500 transition-colors duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="text-white hover:text-gray-500 transition-colors duration-300"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/blog.html"
+              class="text-white hover:text-gray-500 transition-colors duration-300"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contactus"
+              class="text-white hover:text-gray-500 transition-colors duration-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- Hamburger Menu for Mobile -->
+        <button
+          id="menu-toggle"
+          class="md:hidden focus:outline-none"
+          aria-label="Toggle Menu"
+        >
+          <svg
+            class="w-8 h-8 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Overlay for Mobile Menu -->
+      <div
+        id="menu-overlay"
+        class="fixed inset-0 bg-black/30 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 z-40 md:hidden"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="fixed top-0 right-0 h-full w-1/2 max-w-[300px] bg-white transform translate-x-full transition-transform duration-300 z-50 shadow-lg md:hidden"
+        aria-label="Mobile Navigation"
+      >
+        <ul class="flex flex-col mt-20 ml-6 space-y-6 text-lg text-black">
+          <li>
+            <a
+              href="#home"
+              class="hover:text-emerald-700"
+              onclick="toggleMenu()"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#aboutus"
+              class="hover:text-emerald-700"
+              onclick="toggleMenu()"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="hover:text-emerald-700"
+              onclick="toggleMenu()"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/blog.html"
+              class="hover:text-emerald-700"
+              onclick="toggleMenu()"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contactus"
+              class="hover:text-emerald-700"
+              onclick="toggleMenu()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative w-full bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center text-center px-6 py-20 sm:py-28 md:py-36"
+      style="
+        background-image: url('https://pipeonline.com.au/cdn/shop/files/Group_1171275040.png?v=1754656859&width=900');
+      "
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 flex flex-col items-center">
+        <!-- Logo -->
+        <img
+          src="imgs/jk-logo-white.png"
+          alt="JK House and Suppliers Logo"
+          class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-6"
+        />
+
+        <!-- Heading -->
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
+          Reliable Pipes & Fittings for Every Project
+        </h1>
+
+        <!-- Description -->
+        <p class="text-gray-200 text-base sm:text-lg md:text-xl mb-6 max-w-2xl">
+          High-quality pipes, tanks, fittings, and construction tools across
+          Nepal. Durable, reliable, and affordable solutions for residential and
+          commercial projects.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="#products"
+            class="bg-white text-black rounded-md px-6 py-3 text-sm sm:text-base md:text-lg hover:bg-gray-200 transition"
+            aria-label="View Products from JK House and Suppliers"
+          >
+            View Products
+          </a>
+          <a
+            href="#contactus"
+            class="bg-black text-white rounded-md px-6 py-3 text-sm sm:text-base md:text-lg hover:bg-gray-800 transition"
+            aria-label="Contact JK House and Suppliers"
+          >
+            Contact Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="aboutus" class="bg-gray-50 py-16 scroll-mt-12">
+      <div class="container mx-auto px-4 lg:px-36 space-y-12">
+        <!-- Section Heading -->
+        <div
+          id="about"
+          class="max-w-3xl mx-auto text-center"
+          aria-label="About JK House and Suppliers"
+        >
+          <h2 class="text-2xl sm:text-3xl font-bold mb-6">About Us</h2>
+          <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+            JK House and Suppliers has been a trusted distributor of
+            high-quality construction materials in Nepal. We specialize in CPVC,
+            uPVC, PPR, and HDPE pipes, fittings, and water storage solutions.
+            Our mission is to provide durable and affordable products with
+            excellent customer service for every project.
+          </p>
+        </div>
+
+        <!-- Executives Messages -->
+        <div class="space-y-8 mt-12">
+          <h3 class="text-2xl font-bold text-center">
+            Executive Team Messages
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+            <!-- Executive 1 -->
+            <div
+              class="flex flex-col items-center text-center p-4 rounded-lg shadow-md hover:shadow-xl transition w-full"
+            >
+              <img
+                src="imgs/founder.jpg"
+                alt="Executive 1"
+                class="w-28 sm:w-32 h-28 sm:h-32 rounded-full object-cover mb-4"
+              />
+              <h4 class="font-semibold text-lg">Jiwan Kumar Thapa Magar</h4>
+              <span class="text-gray-600 text-sm mb-2">Founder</span>
+              <p class="text-gray-700 text-sm">
+                "Committed to innovation and serving customers with integrity."
+              </p>
+            </div>
+
+            <!-- Executive 2 -->
+            <div
+              class="flex flex-col items-center text-center p-4 rounded-lg shadow-md hover:shadow-xl transition w-full"
+            >
+              <img
+                src="imgs/executive.jpeg"
+                alt="Executive 2"
+                class="w-28 sm:w-32 h-28 sm:h-32 rounded-full object-cover mb-4"
+              />
+              <h4 class="font-semibold text-lg">Jenish Thapa Magar</h4>
+              <span class="text-gray-600 text-sm mb-2">Co-Founder</span>
+              <p class="text-gray-700 text-sm">
+                "Focused on delivering reliable solutions and excellent
+                service."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="bg-gray-50 min-h-screen py-12 scroll-mt-12">
+      <div
+        id="productcontainer"
+        class="container mx-auto px-4 flex flex-col space-y-12"
+      >
+        <!-- Heading -->
+        <div
+          id="heading"
+          class="flex flex-col items-center text-center space-y-4"
+        >
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
+            Our Distributions
+          </h2>
+          <p class="text-sm sm:text-base md:text-xl text-gray-700 max-w-2xl">
+            Explore our key categories including pipes, tanks, tools, and
+            fittings.
+          </p>
+        </div>
+
+        <!-- Product Grid -->
+        <div
+          id="productgrid"
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 lg:px-20"
+        >
+          <!-- Product 1 -->
+          <div
+            class="flex flex-col rounded-md shadow-lg overflow-hidden max-w-xs w-full mx-auto transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <div class="relative w-full">
+              <img
+                src="imgs/cpvc.png"
+                alt="CPVC Pipes"
+                class="rounded-md aspect-[4/3] w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300"
+              >
+                <span class="text-white text-lg font-semibold">CPVC Pipes</span>
+              </div>
+            </div>
+            <div class="flex flex-col p-4 text-center">
+              <b>CPVC Pipes and Fittings</b>
+              <span class="text-sm sm:text-base"
+                >Reliable, heat-resistant piping for hot and cold water.</span
+              >
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="flex flex-col rounded-md shadow-lg overflow-hidden max-w-xs w-full mx-auto transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <div class="relative w-full">
+              <img
+                src="imgs/upvc.png"
+                alt="uPVC Pipes"
+                class="rounded-md aspect-[4/3] w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300"
+              >
+                <span class="text-white text-lg font-semibold">uPVC Pipes</span>
+              </div>
+            </div>
+            <div class="flex flex-col p-4 text-center">
+              <b>uPVC Pipes and Fittings</b>
+              <span class="text-sm sm:text-base"
+                >Strong, lightweight solution for safe water distribution.</span
+              >
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="flex flex-col rounded-md shadow-lg overflow-hidden max-w-xs w-full mx-auto transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <div class="relative w-full">
+              <img
+                src="imgs/ppr.jpeg"
+                alt="PPR Pipes"
+                class="rounded-md aspect-[4/3] w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300"
+              >
+                <span class="text-white text-lg font-semibold">PPR Pipes</span>
+              </div>
+            </div>
+            <div class="flex flex-col p-4 text-center">
+              <b>PPR Pipes and Fittings</b>
+              <span class="text-sm sm:text-base"
+                >Eco-friendly, long-lasting pipes for modern plumbing
+                needs.</span
+              >
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div
+            class="flex flex-col rounded-md shadow-lg overflow-hidden max-w-xs w-full mx-auto transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <div class="relative w-full">
+              <img
+                src="imgs/hdpe.webp"
+                alt="HDPE Pipes"
+                class="rounded-md aspect-[4/3] w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300"
+              >
+                <span class="text-white text-lg font-semibold">HDPE Pipes</span>
+              </div>
+            </div>
+            <div class="flex flex-col p-4 text-center">
+              <b>HDPE Pipes</b>
+              <span class="text-sm sm:text-base"
+                >Flexible, durable pipes for industrial and agricultural
+                applications.</span
+              >
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div
+            class="flex flex-col rounded-md shadow-lg overflow-hidden max-w-xs w-full mx-auto transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <div class="relative w-full">
+              <img
+                src="imgs/tanks.jpg"
+                alt="Water Tanks"
+                class="rounded-md aspect-[4/3] w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300"
+              >
+                <span class="text-white text-lg font-semibold"
+                  >Water Tanks</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col p-4 text-center">
+              <b>Water Tanks</b>
+              <span class="text-sm sm:text-base"
+                >Hygienic, sturdy tanks ensuring safe and clean storage.</span
+              >
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div
+            class="flex flex-col rounded-md shadow-lg overflow-hidden max-w-xs w-full mx-auto transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <div class="relative w-full">
+              <img
+                src="imgs/tools.webp"
+                alt="Power Tools"
+                class="rounded-md aspect-[4/3] w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300"
+              >
+                <span class="text-white text-lg font-semibold"
+                  >Power Tools</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col p-4 text-center">
+              <b>Power Tools</b>
+              <span class="text-sm sm:text-base"
+                >Efficient, reliable tools built for tough construction
+                tasks.</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- End of Product Grid -->
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="whyus" class="py-12 bg-gray-50">
+      <div class="container lg:px-28 mx-auto px-4">
+        <!-- Heading -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold">Why Choose Us?</h2>
+          <p class="text-gray-600 mt-2 max-w-2xl mx-auto">
+            Discover what sets us apart from the competition.
+          </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Feature 1 -->
+          <div
+            class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <div class="bg-blue-500 text-white rounded-full p-4 mb-4">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">High-Quality Products</h3>
+            <p class="text-gray-600 text-sm">
+              We source only durable and reliable pipes, fittings, and tools to
+              ensure your projects succeed.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <div class="bg-green-500 text-white rounded-full p-4 mb-4">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c1.5 0 3 1.5 3 3s-1.5 3-3 3-3-1.5-3-3 1.5-3 3-3z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.364-6.364l-1.414 1.414M6.05 17.95l-1.414 1.414M17.95 17.95l-1.414-1.414M6.05 6.05L4.636 7.464"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Trusted Service</h3>
+            <p class="text-gray-600 text-sm">
+              Our team is dedicated to providing excellent customer support and
+              guidance every step of the way.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <div class="bg-yellow-500 text-white rounded-full p-4 mb-4">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 17v-6h6v6h4v-8H5v8h4z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Affordable Prices</h3>
+            <p class="text-gray-600 text-sm">
+              We offer competitive pricing without compromising quality,
+              ensuring value for your investment.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div
+            class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <div class="bg-red-500 text-white rounded-full p-4 mb-4">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6M12 9v6m-6 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Wide Range of Products</h3>
+            <p class="text-gray-600 text-sm">
+              From pipes to tanks and tools, we provide everything you need
+              under one roof.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="py-12 bg-gray-50">
+      <div class="container lg:px-28 mx-auto px-4">
+        <!-- Heading -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold">What Our Clients Say</h2>
+          <p class="text-gray-600 mt-2 max-w-2xl mx-auto">
+            Hear from our satisfied customers about our reliable products and
+            services.
+          </p>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+            <p class="text-gray-700 mb-4 flex-1">
+              "The CPVC and HDPE pipes we purchased were of excellent quality
+              and delivered on time. Highly recommend!"
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/50?img=1"
+                alt="Customer 1"
+                class="w-12 h-12 rounded-full mr-3 object-cover"
+              />
+              <div>
+                <p class="font-semibold text-gray-900">Ramesh Sharma</p>
+                <p class="text-gray-500 text-sm">Contractor</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+            <p class="text-gray-700 mb-4 flex-1">
+              "Amazing service and very reliable products. Their water tanks are
+              durable and hygienic!"
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/50?img=2"
+                alt="Customer 2"
+                class="w-12 h-12 rounded-full mr-3 object-cover"
+              />
+              <div>
+                <p class="font-semibold text-gray-900">Sita Koirala</p>
+                <p class="text-gray-500 text-sm">Homeowner</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+            <p class="text-gray-700 mb-4 flex-1">
+              "Their power tools are top-notch and make our construction work
+              much easier."
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/50?img=3"
+                alt="Customer 3"
+                class="w-12 h-12 rounded-full mr-3 object-cover"
+              />
+              <div>
+                <p class="font-semibold text-gray-900">Bikash Magar</p>
+                <p class="text-gray-500 text-sm">Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contactus" class="py-12 bg-gray-50 scroll-mt-12">
+      <div class="container lg:px-28 mx-auto px-4">
+        <!-- Heading -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold">Contact Us</h2>
+          <p class="text-gray-600 mt-2 max-w-2xl mx-auto">
+            Have questions or need a quote? Reach out to us and we’ll get back
+            to you promptly.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Contact Form -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <form
+              action="https://formspree.io/f/xpwjvolv"
+              method="POST"
+              class="space-y-4"
+              aria-label="Contact Form"
+            >
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Full Name"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                  class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-cyan-700 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="yourname@example.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                  class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-cyan-700 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Type your message here"
+                  required
+                  autocomplete="off"
+                  aria-required="true"
+                  class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-cyan-700 focus:outline-none"
+                ></textarea>
+              </div>
+
+              <!-- Success/Error Messages -->
+              <p
+                id="form-status"
+                class="text-sm text-gray-500 hidden"
+                role="alert"
+                aria-live="polite"
+              ></p>
+
+              <button
+                type="submit"
+                class="w-full bg-cyan-700 focus:ring-cyan-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300 hover:bg-cyan-800 focus:outline-none cursor-pointer"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="rounded-lg overflow-hidden shadow-md">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3195.4450025085107!2d85.35460883572622!3d27.745626818867706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19ca57e99875%3A0x310efb33096e6622!2sJK%20House%20and%20Suppliers!5e1!3m2!1sen!2snp!4v1758337914826!5m2!1sen!2snp"
+              width="100%"
+              height="100%"
+              class="min-h-[300px] w-full"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-200 py-6">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 py-8 lg:px-20"
+      >
+        <!-- About -->
+        <div class=" flex space-y-3">
+          <img src="imgs/jk-logo-white.png" alt="JK House and Suppliers Logo" class="h-24 w-24 rounded-full" />
+          <div class="flex flex-col">
+            <h4 class="text-xl font-semibold text-white">
+            JK House and Suppliers
+          </h4>
+          <p class="text-gray-300 text-base">
+            Trusted distributor of pipes, tanks, and fittings across Nepal.
+          </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-xl font-semibold text-white">Quick Links</h4>
+          <ul class="space-y-2 text-gray-50 text-base">
+            <li>
+              <a href="#home" class="hover:text-gray-300 transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#aboutus" class="hover:text-gray-300 transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#products" class="hover:text-gray-300 transition-colors"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/blog.html"
+                class="hover:text-gray-300 transition-colors"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="#contactus" class="hover:text-gray-300 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-3">
+          <h4 class="text-xl font-semibold text-white">Contact</h4>
+          <p class="text-gray-300 text-base">
+            Sapredhunga, Dhobikhola Corridor, Kathmandu, Nepal
+          </p>
+          <p class="text-gray-300 text-base">Phone: +977 9865062907</p>
+          <p class="text-gray-300 text-base">
+            Email: jkhouseandsuppliers7@gmail.com
+          </p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="flex flex-col space-y-3">
+          <h4 class="text-xl font-semibold text-white">Connect with Us</h4>
+          <div class="flex space-x-6">
+            <!-- Instagram -->
+            <div class="flex flex-col items-center group relative">
+              <a
+                href="https://www.instagram.com/jkhouseandsuppliers_np/"
+                target="_blank"
+                class="text-gray-300 hover:text-gray-500 transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.75 1.75a.75.75 0 110 1.5.75.75 0 010-1.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+              >
+                Instagram
+              </span>
+            </div>
+
+            <!-- Facebook -->
+            <div class="flex flex-col items-center group relative">
+              <a
+                href="https://www.facebook.com/profile.php?id=61574161550309"
+                target="_blank"
+                class="text-gray-300 hover:text-gray-500 transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.99h-2.54v-2.89h2.54V9.845c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.99C18.343 21.128 22 16.991 22 12z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+              >
+                Facebook
+              </span>
+            </div>
+
+            <!-- TikTok -->
+            <div class="flex flex-col items-center group relative">
+              <a
+                href="https://www.tiktok.com/@jkhouseandsuppliers?lang=en"
+                target="_blank"
+                class="text-gray-300 hover:text-gray-500 transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 3h3.5v14a5.5 5.5 0 11-3.5-5V3z" />
+                </svg>
+              </a>
+              <span
+                class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+              >
+                TikTok
+              </span>
+            </div>
+
+            <!-- YouTube -->
+            <div class="flex flex-col items-center group relative">
+              <a
+                href="https://www.youtube.com/@JKHouseandSuppliers"
+                target="_blank"
+                class="text-gray-300 hover:text-gray-500 transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M23.498 6.186a2.965 2.965 0 00-2.09-2.09C19.638 3.5 12 3.5 12 3.5s-7.638 0-9.408.596a2.965 2.965 0 00-2.09 2.09C0 7.953 0 12 0 12s0 4.047.502 5.814a2.965 2.965 0 002.09 2.09C4.362 20.5 12 20.5 12 20.5s7.638 0 9.408-.596a2.965 2.965 0 002.09-2.09C24 16.047 24 12 24 12s0-4.047-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+              >
+                YouTube
+              </span>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="flex flex-col items-center group relative">
+              <a
+                href="https://www.linkedin.com/in/jk-house-and-suppliers-561768366/"
+                target="_blank"
+                class="text-gray-300 hover:text-gray-500 transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.791-1.75-1.764s.784-1.764 1.75-1.764c.965 0 1.75.791 1.75 1.764s-.785 1.764-1.75 1.764zm13.5 11.268h-3v-5.5c0-1.31-.47-2.2-1.64-2.2-0.896 0-1.43.604-1.666 1.188-.086.21-.108.502-.108.795v5.717h-3s.04-9.277 0-10.243h3v1.45c.398-.614 1.11-1.49 2.707-1.49 1.978 0 3.467 1.29 3.467 4.064v6.22z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+              >
+                LinkedIn
+              </span>
+            </div>
+
+            <!-- Twitter / X -->
+            <div class="flex flex-col items-center group relative">
+              <a
+                href="https://x.com/jkhouse_07"
+                target="_blank"
+                class="text-gray-300 hover:text-gray-500 transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22.46 6c-.77.35-1.6.59-2.46.7a4.29 4.29 0 001.88-2.36 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.3 3.9A12.14 12.14 0 013 4.86a4.28 4.28 0 001.33 5.71 4.24 4.24 0 01-1.94-.54v.05a4.28 4.28 0 003.44 4.19 4.3 4.3 0 01-1.93.07 4.28 4.28 0 003.99 2.97 8.59 8.59 0 01-5.3 1.83A8.64 8.64 0 012 19.54a12.14 12.14 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56A8.7 8.7 0 0024 5.11a8.58 8.58 0 01-2.54.7z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+              >
+                X
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Text -->
+      <div
+        class="border-t border-gray-700 mt-6 pt-3 text-center text-gray-500 text-sm"
+      >
+        &copy; 2025 JK House and Suppliers. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
