@@ -1,0 +1,20 @@
+{
+  "name": "JK House and Suppliers",
+  "short_name": "JK House",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/public/assets/jk-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/assets/jk-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

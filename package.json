@@ -1,13 +1,13 @@
 {
-  "name": "jk-website",
+  "name": "jkhouseandsuppliers",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the official website for JK House & Suppliers. We are a family owned and operated business that has been serving the community for over 20 years. We specialize in home improvement products and services, including roofing, siding, windows, doors, and more. Our team of experienced professionals is dedicated to providing high-quality workmanship and exceptional customer service. Whether you're looking to upgrade your home's exterior or need repairs, we have the expertise to get the job done right. Our primary business is distribution of pips and fittings on wholesale rate. Contact us today for a free consultation and estimate. We look forward to working with you!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev" : "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
-  "author": "",
+  "author": "Jenish Thapa Magar",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
