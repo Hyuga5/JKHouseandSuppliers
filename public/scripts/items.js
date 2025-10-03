@@ -1207,7 +1207,7 @@ function createProductPopup() {
   const overlay = document.createElement("div");
   overlay.id = "productPopupOverlay";
   overlay.className =
-    "fixed inset-0 bg-black bg-opacity-40 z-[100] flex items-center justify-center px-4 sm:px-0 hidden";
+    "fixed inset-0 bg-transparent z-[100] flex items-center justify-center px-4 sm:px-0 hidden";
 
   overlay.innerHTML = `
     <div id="productPopup" class="bg-white rounded-lg shadow-lg max-w-md w-full flex p-2 sm:p-4 gap-2 sm:gap-4 relative animate-fade-in">
